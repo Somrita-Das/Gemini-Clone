@@ -1,0 +1,49 @@
+.welcome-popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.welcome-popup-card {
+  padding: 40px 60px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.welcome-popup-card h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .welcome-popup-card {
+    padding: 30px 40px;
+  }
+
+  .welcome-popup-card h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-popup-card {
+    padding: 20px 30px;
+    width: 90vw;
+  }
+
+  .welcome-popup-card h1 {
+    font-size: 1.5rem;
+  }
+}
